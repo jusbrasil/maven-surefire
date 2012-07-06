@@ -29,13 +29,32 @@
 
   <groupId>org.apache.maven.surefire</groupId>
   <artifactId>surefire</artifactId>
-  <version>2.12</version>
+  <version>2.12.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>SureFire</name>
   <description>Surefire is a test framework project.</description>
   <url>http://maven.apache.org/surefire</url>
   <inceptionYear>2004</inceptionYear>
+
+  <repositories>
+    <repository>
+      <id>jusbrasil</id>
+      <name>JusBrasil</name>
+      <url>http://repository.jusbrasil.com.br/content/groups/jusbrasil/</url>
+    </repository>
+  </repositories>
+  
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <url>http://repository.jusbrasil.com.br/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <url>http://repository.jusbrasil.com.br/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <contributors>
     <contributor>
